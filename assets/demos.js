@@ -42,10 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   document.querySelector('.toggle').addEventListener('click', function () {
-    typed.toggle();
+    typed.toggle(true);
   });
   document.querySelector('.stop').addEventListener('click', function () {
-    typed.stop();
+    typed.stop(true);
   });
   document.querySelector('.start').addEventListener('click', function () {
     typed.start();

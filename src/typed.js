@@ -19,20 +19,23 @@ export default class Typed {
    * Toggle start() and stop() of the Typed instance
    * @public
    */
-  toggle() {
-    this.pause.status ? this.start() : this.stop();
+  toggle(hideCursor) {
+    this.pause.status ? this.start() : this.stop(hideCursor);
   }
 
   /**
    * Stop typing / backspacing and enable cursor blinking
    * @public
    */
-  stop() {
+  stop(hideCursor) {
     if (this.typingComplete) return;
     if (this.pause.status) return;
     this.toggleBlinking(true);
     this.pause.status = true;
     this.options.onStop(this.arrayPos, this);
+    if (hideCursor) {
+      this.hideCursor()
+    }
   }
 
   /**
@@ -48,6 +51,7 @@ export default class Typed {
     } else {
       this.backspace(this.pause.curString, this.pause.curStrPos);
     }
+    this.insertCursor();
     this.options.onStart(this.arrayPos, this);
   }
 
@@ -68,17 +72,25 @@ export default class Typed {
   reset(restart = true) {
     clearInterval(this.timeout);
     this.replaceText('');
-    if (this.cursor && this.cursor.parentNode) {
-      this.cursor.parentNode.removeChild(this.cursor);
-      this.cursor = null;
-    }
+    this.hideCursor();
     this.strPos = 0;
     this.arrayPos = 0;
     this.curLoop = 0;
+    this.insertCursor();
     if (restart) {
       this.insertCursor();
       this.options.onReset(this);
       this.begin();
+    }
+  }
+
+  /**
+   * hide cursor
+   */
+  hideCursor () {
+    if (this.cursor && this.cursor.parentNode) {
+      this.cursor.parentNode.removeChild(this.cursor);
+      this.cursor = null;
     }
   }
 

@@ -10,12 +10,12 @@ export default class Typed {
      * Toggle start() and stop() of the Typed instance
      * @public
      */
-    public toggle(): void;
+    public toggle(hideCursor: any): void;
     /**
      * Stop typing / backspacing and enable cursor blinking
      * @public
      */
-    public stop(): void;
+    public stop(hideCursor: any): void;
     /**
      * Start typing / backspacing after being stopped
      * @public
@@ -32,10 +32,14 @@ export default class Typed {
      * @public
      */
     public reset(restart?: boolean): void;
-    cursor: HTMLSpanElement;
     strPos: number;
     arrayPos: number;
     curLoop: number;
+    /**
+     * hide cursor
+     */
+    hideCursor(): void;
+    cursor: HTMLSpanElement;
     /**
      * Begins the typing animation
      * @private

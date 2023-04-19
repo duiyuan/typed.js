@@ -210,9 +210,17 @@ Returns **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 Toggle start() and stop() of the Typed instance
 
+**Parameters**
+
+-   `hideCursor` **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)?= nser** 
+
 ### stop
 
 Stop typing / backspacing and enable cursor blinking
+
+**Parameters**
+
+-   `hideCursor` **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)?= nser** 
 
 ### start
 
