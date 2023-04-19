@@ -131,16 +131,20 @@ declare module 'typed.js' {
      * Toggle start() and stop() of the Typed instance
      * @public
      */
-    public toggle(): void;
+    public toggle(hideCursor?: boolean): void;
     /**
      * Stop typing / backspacing and enable cursor blinking
      * @public
      */
-    public stop(): void;
+    public stop(hideCursor: boolean): void;
     /**
      * Start typing / backspacing after being stopped
      * @public
      */
+    /**
+     * hide cursor
+     */
+    public hideCursor(): void;
     public start(): void;
     /**
      * Destroy this instance of Typed
