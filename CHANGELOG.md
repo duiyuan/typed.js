@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/mattboldt/typed.js/compare/v2.1.0...v2.1.1) (2023-04-19)
+
+
+### Bug Fixes
+
+* update release ([2288410](https://github.com/mattboldt/typed.js/commit/228841028d8a406f6af02d5ef29c4daa59581e7e))
+
 ## 2.1.0 (2023-04-19)
 
 
