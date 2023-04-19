@@ -39,4 +39,4 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           echo 'print secrets.NPM_TOKEN ${{ secrets.NPM_TOKEN }}'
-          yarn publish --access public
+          npm publish --access public
