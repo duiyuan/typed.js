@@ -45,19 +45,19 @@ For use with a build tool like [Vite](https://vitejs.dev/), and/or in a React ap
 #### NPM
 
 ```
-npm install typed.js
+npm install @dioxide-js/typed.js
 ```
 
 #### Yarn
 
 ```
-yarn add typed.js
+yarn add @dioxide-js/typed.js
 ```
 
 #### General ESM Usage
 
 ```js
-import Typed from 'typed.js';
+import Typed from '@dioxide-js/typed.js';
 
 const typed = new Typed('#element', {
   strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
@@ -69,7 +69,7 @@ const typed = new Typed('#element', {
 
 ```js
 import React from 'react';
-import Typed from 'typed.js';
+import Typed from '@dioxide-js/typed.js';
 
 function MyComponent() {
   // Create reference to store the DOM element containing the animation
