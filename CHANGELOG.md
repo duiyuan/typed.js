@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/duiyuan/typed.js/compare/v1.2.0...v1.2.1) (2023-04-21)
+
+
+### Bug Fixes
+
+* update package repo, d.ts namespace ([8ec86a2](https://github.com/duiyuan/typed.js/commit/8ec86a2e2c9f1310dca42099bf4fe184e674f2ad))
+* update readme ([b63bc48](https://github.com/duiyuan/typed.js/commit/b63bc481b16c417733ebe5f4a3dc85c9fbe05400))
+
 ## [1.2.0](https://github.com/mattboldt/typed.js/compare/v1.1.0...v1.2.0) (2023-04-19)
 
 
